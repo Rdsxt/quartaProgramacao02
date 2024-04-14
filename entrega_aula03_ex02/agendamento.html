@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Agendamento Médico</title>
+</head>
+<body>
+
+    <main>
+        <h2>Agendamento de Consulta</h2>
+
+        <form action="" method="post">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone" required><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" required><br>
+
+                <label for="idade">Idade:</label>
+                <input type="text" id="idade" name="idade" placeholder="Digite sua idade" required><br>
+
+                <label for="especialidade">Especialidade Médica:</label>
+                <select id="especialidade" name="especialidade" required>
+                    <option value="" disabled selected>Selecione uma especialidade</option>
+                    <option value="cardiologia">Cardiologia</option>
+                    <option value="dermatologia">Dermatologia</option>
+                    <option value="ginecologia">Ginecologia</option>
+                </select><br><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Preferências de Horário</legend>
+                <label for="data_consulta">Data da Consulta:</label>
+                <input type="date" id="data_consulta" name="data_consulta" required><br>
+
+                <label for="horario_consulta">Horário da Consulta:</label>
+                <input type="time" id="horario_consulta" name="horario_consulta" required><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Observações Adicionais</legend>
+                <textarea id="observacoes" name="observacoes" rows="4" cols="50" placeholder="Digite suas observações"></textarea>
+            </fieldset>
+            <input type="submit" value="Agendar Consulta">
+        </form>
+    </main>
+</body>
+</html>
